@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="Gilroy/stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Dashboard</h1>
+            <div class="tasks">
+                <button class="task_add" data-target="modal">Добавить задачу</button>
+            </div>
+        </div>
+
+        <div class="type">
+            <p class="chouse_type">Показать задачи как:</p>
+            <span class="table">Таблица</span>
+            <span class="block">Плитка</span>
+        </div>
+
+    </div>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Заголовок задачи</th>
+                    <th>Описание задачи</th>
+                    <th>Дата</th>
+                    <th>Время</th>
+                    <th>Выполнено</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="title">Переписать проект на Vue 3</td>
+                    <td id="describe">Quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit
+                        molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</td>
+                    <td id="data">21.10.21</td>
+                    <td id="time">14:31</td>
+                    <td id="action">Не выполнено</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <h2>Добавить</h2>
+            <form name="changeTodo">
+                <input type="text" id="taskTitle" placeholder="Заголовок задачи">
+                <input type="text" id="taskDescribe" placeholder="Описание задачи">
+                <input type="text" id="taskDate" placeholder="Дата">
+                <input type="date" id="taskTime" placeholder="Время">
+                <select id="taskAction">
+                    <option value="Выполнено">Выполнено</option>
+                    <option value="Запланировано">Запланировано</option>
+                    <option value="Не выполнено">Не выполнено</option>
+                </select>
+                <div class="btn_box">
+                    <button class="subbtn" type="button" onclick="addTask()">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+.container {
+    max-width: 1920px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.title h1 {
+    color: #000;
+
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.title {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+
+
+
+
+.task_add {
+    max-width: 100%;
+    padding: 15px 35px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #007FFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.task_search {
+    color: #979797;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 35px;
+    max-width: 100%;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+}
+
+.type {
+    display: flex;
+    gap: 16px;
+}
+
+.chouse_type {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.table,
+.block {
+    color: #979797;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dce7ea;
+    text-align: left;
+    padding: 10px 50px 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+th {
+    color: #949494;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#describe {
+    width: 45%;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.modal-dialog {
+    padding: 20px;
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: white;
+    border-radius: 14px;
+}
+
+.modal-dialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.modal-dialog form input {
+    width: 94%;
+    border: 1px solid #007FFF;
+    padding: 15px 35px;
+    border-radius: 8px;
+}
+
+.modal-dialog form .cancel {
+    background-color: brown;
+    border-color: brown;
+}
+
+.show {
+    display: flex;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.subbtn {
+    width: fit-content;
+    background-color: #007FFF;
+    border: none;
+    padding: 15px 35px;
+    color: #FFF;
+    border-radius: 8px;
+
+}
